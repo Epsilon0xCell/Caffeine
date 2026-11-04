@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="190" viewBox="0 0 800 190" role="img" aria-label="Steam Eye: steam from a coffee cup curling into a wide open eye, moon asleep outside">
+<rect width="800" height="190" fill="#f7f0dc"/>
+<g fill="#6f4a2f" opacity="0.25"><circle cx="30" cy="30" r="5"/><circle cx="60" cy="30" r="5"/><circle cx="90" cy="30" r="5"/><circle cx="30" cy="60" r="5"/><circle cx="60" cy="60" r="5"/><circle cx="710" cy="150" r="5"/><circle cx="740" cy="150" r="5"/><circle cx="770" cy="150" r="5"/><circle cx="740" cy="120" r="5"/></g>
+<circle cx="700" cy="42" r="24" fill="#f7f0dc" stroke="#111111" stroke-width="3"/><path d="M688 34 a10 10 0 1 0 10 14" fill="none" stroke="#111111" stroke-width="2"/><text x="682" y="82" font-family="sans-serif" font-size="13" fill="#111111">z z</text>
+<path d="M300 150 h220 l-18 28 h-184 Z" fill="#e5322d" stroke="#111111" stroke-width="3"/><path d="M520 156 a22 16 0 1 1 0 20" fill="none" stroke="#111111" stroke-width="4"/>
+<path d="M380 138 C360 112 400 96 384 68 C372 46 392 34 388 14" fill="none" stroke="#6f4a2f" stroke-width="5" stroke-linecap="round"><animate attributeName="opacity" values="1;0.45;1" dur="3s" repeatCount="indefinite"/></path>
+<path d="M438 138 C458 112 418 96 434 68 C446 46 426 34 430 14" fill="none" stroke="#6f4a2f" stroke-width="5" stroke-linecap="round"><animate attributeName="opacity" values="0.45;1;0.45" dur="3s" repeatCount="indefinite"/></path>
+<path d="M330 62 C370 28 450 28 490 62 C450 94 370 94 330 62 Z" fill="#ffffff" stroke="#111111" stroke-width="4"/>
+<circle cx="410" cy="62" r="17" fill="#e5322d" stroke="#111111" stroke-width="3"><animate attributeName="r" values="15;19;15" dur="2.4s" repeatCount="indefinite"/></circle><circle cx="410" cy="62" r="6" fill="#111111"/>
+</svg>

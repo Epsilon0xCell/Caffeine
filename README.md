@@ -1,3 +1,13 @@
+<p align="center"><img src="banner.png" width="800" alt="Caffeine banner"></p>
+
+<p align="center"><img src="logo.png" width="200" alt="Caffeine logo"></p>
+
+<img src="assets-scene.svg" alt="Steam Eye: steam curling into a wide open eye" width="100%">
+
+*Steam Eye: coffee keeps the Mac awake, steam curling into a wide open eye while the moon sleeps outside.*
+
+![Separator](sep-light.svg)
+
 <img src="https://github.caffeine-app.net/assets/icon.png" alt="Icon" width="239"/>
 
 # Caffeine
@@ -40,6 +50,8 @@ No, this version requires at least macOS 11 (Big Sur). Caffeine for macOS Yosemi
 ##### How is Caffeine different or better than alternatives (such as Amphetamine, KeepingYouAwake, etc)?
 
 Due to the long period of inactivity for Caffeine, a lot of different and great options have been developed. While the alternatives are great apps and definitely worth your consideration, we believe that Caffeine's power lies in its simplicity and ease of use.
+
+<p align="center"><img src="assets/intro-banner.png" width="800" alt="Caffeine introduction"></p>
 
 ### Support
 
