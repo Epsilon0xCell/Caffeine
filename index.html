@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Caffeine: Don't let your Mac fall asleep</title>
+<meta name="description" content="Caffeine is a tiny macOS menu bar program that keeps a Mac awake. Click the coffee cup to stop sleep, screen dimming, and screen savers.">
+<style>
+@font-face{font-family:'Luckiest Guy';src:url('fonts/LuckiestGuy.ttf') format('truetype');font-display:swap}
+@font-face{font-family:'Archivo';src:url('fonts/Archivo-Regular.ttf') format('truetype');font-display:swap}
+@font-face{font-family:'Archivo';src:url('fonts/Archivo-Bold.ttf') format('truetype');font-weight:700;font-display:swap}
+:root{--cream:#fff6e3;--brown:#5b3421;--red:#e5322d;--ink:#171310;--paper:#fffdf6}
+*{box-sizing:border-box}body{margin:0;background:var(--cream);background-image:radial-gradient(var(--brown) 1px,transparent 1.3px);background-size:22px 22px;color:var(--ink);font-family:'Archivo',sans-serif;line-height:1.6}
+h1,h2{font-family:'Luckiest Guy',cursive;font-weight:400;letter-spacing:.02em}
+h1{font-size:clamp(2.8rem,8vw,5rem);line-height:.95;margin:.1em 0;color:var(--brown);text-shadow:4px 4px 0 var(--red)}
+h2{font-size:1.9rem;color:var(--brown)}
+a{color:var(--red);font-weight:700}
+.burst{max-width:1060px;margin:0 auto;padding:2rem 4vw 3rem}
+.hero-card{background:var(--paper);border:4px solid var(--ink);box-shadow:10px 10px 0 var(--ink);padding:1.4rem;margin-top:1.4rem}
+.hero-card img.banner{width:100%;height:auto;display:block;border:3px solid var(--ink)}
+.mast{display:flex;gap:1.2rem;align-items:center;flex-wrap:wrap;margin-top:1.4rem}
+.mast img{width:110px;height:110px;object-fit:cover;border:4px solid var(--ink);border-radius:50%;background:#fff}
+.kicker{display:inline-block;background:var(--red);color:#fff;font-weight:700;padding:.25rem .8rem;border:3px solid var(--ink);transform:rotate(-2deg)}
+.lede{font-size:1.15rem;max-width:62ch}
+.cups{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.2rem;margin:1.6rem 0}
+.cup{background:#fff;border:4px solid var(--ink);box-shadow:7px 7px 0 var(--brown);padding:1.1rem 1.2rem}
+.cup.full{background:var(--brown);color:var(--cream)} .cup.full h2{color:#fff}
+.cup h2{margin:.1em 0 .3em;font-size:1.5rem}
+.steps{counter-reset:step;list-style:none;padding:0}
+.steps li{background:#fff;border:3px solid var(--ink);padding:.9rem 1rem .9rem 3.4rem;margin:.7rem 0;position:relative}
+.steps li::before{counter-increment:step;content:counter(step);position:absolute;left:.8rem;top:.6rem;width:1.9rem;height:1.9rem;border-radius:50%;background:var(--red);color:#fff;font-family:'Luckiest Guy',cursive;text-align:center;line-height:1.9rem;border:2px solid var(--ink)}
+table{border-collapse:collapse;width:100%;background:#fff}td,th{border:3px solid var(--ink);padding:.5rem .7rem;text-align:left}th{background:var(--cream)}
+.panel{background:var(--paper);border:4px solid var(--ink);box-shadow:8px 8px 0 var(--red);padding:1.2rem 1.4rem;margin:1.6rem 0}
+.panel img{width:100%;height:auto;border:3px solid var(--ink)}
+.btn{display:inline-block;background:var(--red);color:#fff;text-decoration:none;padding:.6rem 1.3rem;border:3px solid var(--ink);box-shadow:5px 5px 0 var(--ink);font-weight:700;margin:.2rem .4rem .2rem 0}
+.btn.alt{background:#fff;color:var(--ink)} .btn:hover{transform:translate(-1px,-1px)}
+footer{max-width:1060px;margin:0 auto;padding:0 4vw 2.6rem}
+code{font-family:ui-monospace,Menlo,monospace}
+</style>
+</head>
+<body>
+<div class="burst">
+  <div class="hero-card">
+    <img class="banner" src="assets/banner.png" alt="Pop art scene: a laptop kept bright at night beside a large coffee cup, while the moon sleeps outside">
+    <div class="mast">
+      <img src="assets/logo.png" alt="Caffeine logo: a coffee cup whose steam curls into a wide open eye">
+      <div><span class="kicker">macOS menu bar</span><h1>Caffeine</h1></div>
+    </div>
+    <p class="lede">Don't let your Mac fall asleep. I keep this tiny program in the fleet because the idea is plain: Caffeine puts a coffee cup in the right side of your menu bar, and one click on the cup stops your Mac from automatically going to sleep, dimming the screen, or starting screen savers. That is the whole job, and it is useful when a long running task must not be interrupted by sleep.</p>
+    <p><a class="btn" href="https://caffeine-app.net">Download Caffeine</a> <a class="btn alt" href="https://github.com/Epsilon0xCell/Caffeine">The repo</a> <a class="btn alt" href="#use">How the cup works</a></p>
+  </div>
+
+  <div class="cups" id="use">
+    <section class="cup full"><h2>Full cup: awake</h2><p>Click the cup to turn Caffeine on. A full cup means Caffeine will prevent your Mac from automatically going to sleep, dimming the screen, or starting screen savers.</p></section>
+    <section class="cup"><h2>Empty cup: normal</h2><p>Click again to turn it off. An empty cup means your Mac will sleep normally, on its own settings.</p></section>
+    <section class="cup"><h2>The menu: more control</h2><p>Right-click (or Command-click) the icon to show the menu. From there you can open the preferences window or set a timeout, if you only need Caffeine to prevent sleep for a little while.</p></section>
+  </div>
+
+  <section class="panel">
+    <h2>Install, in three moves</h2>
+    <ol class="steps">
+      <li>Download Caffeine at <a href="https://caffeine-app.net">caffeine-app.net</a>.</li>
+      <li>Drag it into your Applications folder.</li>
+      <li>Double-click the icon to launch it, then look for the coffee cup in your menu bar.</li>
+    </ol>
+    <p>This version requires at least macOS 11 (Big Sur). Caffeine for macOS Yosemite or later, including Catalina, is linked from the repo README.</p>
+  </section>
+
+  <section class="panel">
+    <h2>At a glance</h2>
+    <table>
+      <tr><th>Item</th><th>Detail</th></tr>
+      <tr><td>Toggle</td><td>Click the menu bar cup</td></tr>
+      <tr><td>Full cup</td><td>Prevents sleep, screen dimming, and screen savers</td></tr>
+      <tr><td>Empty cup</td><td>Mac sleeps normally</td></tr>
+      <tr><td>Menu</td><td>Right-click for preferences and timeout</td></tr>
+      <tr><td>Options</td><td>Start at startup, activate on start, default duration</td></tr>
+      <tr><td>System</td><td>macOS 11 or later for this version</td></tr>
+      <tr><td>License</td><td>MIT. See LICENSE in the repo.</td></tr>
+    </table>
+  </section>
+
+  <section class="panel">
+    <h2>Where it came from</h2>
+    <p>Yes, this is the same Caffeine many Mac users have used before. Tomas Franzén of Lighthead Software first developed Caffeine in 2006. In 2018, Michael Jones of IntelliScape Computer Solutions reached out to Tomas about continuing development, and Tomas provided the source code under an open source license so IntelliScape could carry it on from there. Questions and feedback go to <a href="https://caffeine-app.net/support">caffeine-app.net/support</a>.</p>
+    <img src="assets/intro.png" alt="Pop art introduction image for Caffeine: coffee keeping a laptop awake at night">
+  </section>
+</div>
+<footer>
+  <p>Caffeine is an upstream app held in my fleet. This page uses only what the repo README and LICENSE state. Site by Gavin Blacklock.</p>
+  <p><a href="https://github.com/Epsilon0xCell/Caffeine">github.com/Epsilon0xCell/Caffeine</a></p>
+</footer>
+</body>
+</html>
