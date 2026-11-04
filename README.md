@@ -1,12 +1,18 @@
-<p align="center"><img src="banner.png" width="800" alt="Caffeine banner"></p>
+<p align="center"><img src="banner.png" width="680" alt="Caffeine banner"></p>
 
-<p align="center"><img src="logo.png" width="200" alt="Caffeine logo"></p>
+<p align="center"><img src="logo.png" width="120" alt="Caffeine logo"></p>
 
 <img src="assets-scene.svg" alt="Steam Eye: steam curling into a wide open eye" width="100%">
 
 *Steam Eye: coffee keeps the Mac awake, steam curling into a wide open eye while the moon sleeps outside.*
 
 ![Separator](sep-light.svg)
+
+<p align="center"><img src="https://img.shields.io/badge/macOS-11%2B-blue" alt="macOS 11+"> <img src="https://img.shields.io/badge/License-MIT-yellow" alt="License MIT"></p>
+
+<p align="center"><a href="https://caffeine-app.net"><strong>Download Caffeine</strong></a></p>
+
+<p align="center">Download Caffeine at https://caffeine-app.net and drag it into your Applications folder, then double-click the icon to launch it.</p>
 
 <img src="https://github.caffeine-app.net/assets/icon.png" alt="Icon" width="239"/>
 
@@ -51,8 +57,21 @@ No, this version requires at least macOS 11 (Big Sur). Caffeine for macOS Yosemi
 
 Due to the long period of inactivity for Caffeine, a lot of different and great options have been developed. While the alternatives are great apps and definitely worth your consideration, we believe that Caffeine's power lies in its simplicity and ease of use.
 
-<p align="center"><img src="assets/intro-banner.png" width="800" alt="Caffeine introduction"></p>
 
 ### Support
 
 If you have questions, comments or other feedback get in touch at https://caffeine-app.net/support.
+
+### At a glance
+
+| Item | Detail |
+|---|---|
+| Toggle | Click the menu bar cup |
+| Full cup | Prevents sleep, screen dimming, and screen savers |
+| Empty cup | Mac sleeps normally |
+| Menu | Right-click for preferences and timeout |
+| Options | Start at startup, activate on start, default duration |
+
+### License
+
+MIT. See LICENSE.
